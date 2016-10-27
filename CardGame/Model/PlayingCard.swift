@@ -62,7 +62,7 @@ class PlayingCard : Card
     {
         super.init()
         rank = 0
-        suit = ""
+        suit = String()
         color = UIColor()
     }
     
@@ -87,7 +87,21 @@ class PlayingCard : Card
     override func toString() -> String
     
     {
-        let description = "The playing card rank is: \(rank) and its suit is \(suit). It has a color of \(color)"
+        
+        let backStatus : String
+        
+        if super.isFacing()
+        {
+            backStatus = " is face up"
+        }
+        
+        else
+        {
+            backStatus = " is face down"
+        }
+        
+        
+        let description = "The playing card rank is: \(rank) and its suit is \(suit). It has a color of \(color) and \(backStatus)"
         return description
     }
     

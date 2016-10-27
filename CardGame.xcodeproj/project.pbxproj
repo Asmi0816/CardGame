@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F33DD5A51DBFE3EC00B56512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5A41DBFE3EC00B56512 /* AppDelegate.swift */; };
-		F33DD5A71DBFE3EC00B56512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5A61DBFE3EC00B56512 /* ViewController.swift */; };
 		F33DD5AA1DBFE3EC00B56512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33DD5A81DBFE3EC00B56512 /* Main.storyboard */; };
 		F33DD5AC1DBFE3EC00B56512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33DD5AB1DBFE3EC00B56512 /* Assets.xcassets */; };
 		F33DD5AF1DBFE3EC00B56512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33DD5AD1DBFE3EC00B56512 /* LaunchScreen.storyboard */; };
 		F33DD5B71DBFE5CE00B56512 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5B61DBFE5CE00B56512 /* Card.swift */; };
 		F33DD5B91DBFE5F700B56512 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5B81DBFE5F700B56512 /* PlayingCard.swift */; };
+		F35CF8241DC27DBE00349BB2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CF8231DC27DBE00349BB2 /* CardGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F33DD5A11DBFE3EC00B56512 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33DD5A41DBFE3EC00B56512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F33DD5A61DBFE3EC00B56512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F33DD5A91DBFE3EC00B56512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F33DD5AB1DBFE3EC00B56512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33DD5AE1DBFE3EC00B56512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33DD5B01DBFE3EC00B56512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33DD5B61DBFE5CE00B56512 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		F33DD5B81DBFE5F700B56512 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
+		F35CF8231DC27DBE00349BB2 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameController.swift; path = Controller/CardGameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				F33DD5A41DBFE3EC00B56512 /* AppDelegate.swift */,
-				F33DD5A61DBFE3EC00B56512 /* ViewController.swift */,
 				F33DD5BB1DBFE68600B56512 /* View */,
 				F33DD5B01DBFE3EC00B56512 /* Info.plist */,
 				F33DD5BA1DBFE66300B56512 /* Model */,
+				F35CF8251DC27DEC00349BB2 /* Controller */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
@@ -84,6 +84,14 @@
 				F33DD5AD1DBFE3EC00B56512 /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F35CF8251DC27DEC00349BB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F35CF8231DC27DBE00349BB2 /* CardGameController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33DD5A71DBFE3EC00B56512 /* ViewController.swift in Sources */,
 				F33DD5B71DBFE5CE00B56512 /* Card.swift in Sources */,
 				F33DD5B91DBFE5F700B56512 /* PlayingCard.swift in Sources */,
 				F33DD5A51DBFE3EC00B56512 /* AppDelegate.swift in Sources */,
+				F35CF8241DC27DBE00349BB2 /* CardGameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
