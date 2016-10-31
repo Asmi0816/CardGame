@@ -40,7 +40,7 @@ class Card
     
     init()
     {
-        backImage = UIImage()
+        backImage = UIImage(named: "MonstarCard")!
         isFaceUp = false
     }
     
