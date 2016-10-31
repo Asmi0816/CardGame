@@ -63,7 +63,15 @@ class PlayingCard : Card
         super.init()
         rank = 0
         suit = String()
-        color = UIColor()
+        color = UIColor.redColor()
+    }
+    
+    init(withRank: Int, ofSuit:String)
+    {
+        super.init()
+        color = UIColor.redColor()
+        suit = ofSuit
+        rank = withRank
     }
     
     func getRank() -> Int
@@ -125,6 +133,33 @@ class PlayingCard : Card
     {
         return ["♠️","♣️","♥️","♦️"]
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }

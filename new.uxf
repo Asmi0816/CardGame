@@ -58,6 +58,7 @@ bg=red</panel_attributes>
 + getSuit() : String
 + getColor() : UIColor
 + init() : Initializer
++ init (witRank:In, ofSuit:String)
 + toString() : String
 bg=green
 </panel_attributes>
