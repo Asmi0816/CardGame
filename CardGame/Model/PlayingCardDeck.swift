@@ -6,7 +6,7 @@
 //  Copyright © 2016 Smith, Arick. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 
 class PlayingCardDeck : Deck
