@@ -59,7 +59,7 @@ bg=red</panel_attributes>
 + getColor() : UIColor
 + init() : Initializer
 + toString() : String
-bg=orange
+bg=green
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -73,5 +73,63 @@ bg=orange
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>110.0;10.0;110.0;130.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>260</y>
+      <w>290</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Deck
+--
+
+--
+bg=blue
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>700</y>
+      <w>270</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: PlayingCardDeck
+--
+cards : [PlayingCard]
+--
++init
++shuffle() : void
++orderDeck() : Void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>540</y>
+      <w>160</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;110.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>480</y>
+      <w>80</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=52</panel_attributes>
+    <additional_attributes>60.0;220.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
