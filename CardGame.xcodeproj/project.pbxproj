@@ -14,6 +14,8 @@
 		F33DD5B71DBFE5CE00B56512 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5B61DBFE5CE00B56512 /* Card.swift */; };
 		F33DD5B91DBFE5F700B56512 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33DD5B81DBFE5F700B56512 /* PlayingCard.swift */; };
 		F35CF8241DC27DBE00349BB2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CF8231DC27DBE00349BB2 /* CardGameController.swift */; };
+		F3E0C3FE1DC7C4570018A634 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0C3FD1DC7C4570018A634 /* Deck.swift */; };
+		F3E0C4001DC7C46F0018A634 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0C3FF1DC7C46F0018A634 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F33DD5B61DBFE5CE00B56512 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		F33DD5B81DBFE5F700B56512 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 		F35CF8231DC27DBE00349BB2 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameController.swift; path = Controller/CardGameController.swift; sourceTree = "<group>"; };
+		F3E0C3FD1DC7C4570018A634 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Model/Deck.swift; sourceTree = "<group>"; };
+		F3E0C3FF1DC7C46F0018A634 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCardDeck.swift; path = Model/PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				F33DD5B61DBFE5CE00B56512 /* Card.swift */,
 				F33DD5B81DBFE5F700B56512 /* PlayingCard.swift */,
+				F3E0C3FD1DC7C4570018A634 /* Deck.swift */,
+				F3E0C3FF1DC7C46F0018A634 /* PlayingCardDeck.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			files = (
 				F33DD5B71DBFE5CE00B56512 /* Card.swift in Sources */,
 				F33DD5B91DBFE5F700B56512 /* PlayingCard.swift in Sources */,
+				F3E0C3FE1DC7C4570018A634 /* Deck.swift in Sources */,
+				F3E0C4001DC7C46F0018A634 /* PlayingCardDeck.swift in Sources */,
 				F33DD5A51DBFE3EC00B56512 /* AppDelegate.swift in Sources */,
 				F35CF8241DC27DBE00349BB2 /* CardGameController.swift in Sources */,
 			);
