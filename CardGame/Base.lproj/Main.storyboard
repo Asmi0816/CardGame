@@ -17,33 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBP-cx-EdV">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="card flip." backgroundImage="MonstarCard">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9by-yj-x95">
+                                <rect key="frame" x="208" y="156" width="184" height="288"/>
+                                <state key="normal" title="flip" backgroundImage="MonstarCard">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="240" width="193" height="319"/>
-                                </variation>
+                                <connections>
+                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQt-HT-jPF"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x82-ou-U7c">
+                                <rect key="frame" x="208" y="93" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="nBP-cx-EdV"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="nBP-cx-EdV"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="9by-yj-x95" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5l9-1R-FTK"/>
+                            <constraint firstItem="x82-ou-U7c" firstAttribute="leading" secondItem="9by-yj-x95" secondAttribute="leading" id="6PT-IV-9pK"/>
+                            <constraint firstItem="x82-ou-U7c" firstAttribute="width" secondItem="9by-yj-x95" secondAttribute="width" constant="30" id="Iyy-pn-ZTo"/>
+                            <constraint firstItem="9by-yj-x95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZT-jn-Mvb"/>
+                            <constraint firstItem="9by-yj-x95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chf-ay-xgw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="9by-yj-x95" id="gyv-Tk-aml"/>
+                        <outlet property="cardLabel" destination="x82-ou-U7c" id="6xM-3D-Ab4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="351.75"/>
+            <point key="canvasLocation" x="1074" y="351"/>
         </scene>
     </scenes>
     <resources>
