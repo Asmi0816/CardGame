@@ -11,7 +11,7 @@ import Foundation
 
 class Deck
 {
-    internal lazy var cards = [Card()]
+    internal lazy var cards = [Card]()
     
     
     func shuffleDeck() -> Void
