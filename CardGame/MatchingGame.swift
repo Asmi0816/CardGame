@@ -31,7 +31,10 @@ class MatchingGame
     {
         gameScore = 0
         
-        for 
+        for var firstDeck = 1; firstDeck <= PlayingCardDeck(); firstDeck += 2
+        {
+            
+        }
         
         
         
