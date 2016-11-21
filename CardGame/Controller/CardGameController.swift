@@ -11,10 +11,10 @@ import UIKit
 class CardGameController : UIViewController
 {
     
-    private lazy var clickCount = Int()
-    private lazy var cardDeck = PlayingCardDeck()
     
-    @IBOutlet weak var cardLabel: UILabel!
+    
+    @IBOutlet weak var gameLabel: UILabel!
+    
     @IBOutlet weak var cardButton: UIButton!
     
     override func viewDidLoad() -> Void
@@ -24,21 +24,11 @@ class CardGameController : UIViewController
     }
     
     
-    @IBAction func cardClick(sender: UIButton)
+    
+    
+    @IBAction func buttonClick(sender: UIButton)
     {
-        clickCount += 1
-        
-        let content = "you clicked \(clickCount) times"
-        
-        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
-        {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
-        }
-        else
-        {
-            cardButton.setTitle("deck over", forState: UIControlState.Normal)
-        }
-        cardLabel.text = content
-        
+        performSegueWithIdentifier("toMatchingFromMain", sender: sender)
     }
+    
 }

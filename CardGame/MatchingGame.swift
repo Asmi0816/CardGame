@@ -27,18 +27,6 @@ class MatchingGame
         
     }
     
-    func startGame() -> Void
-    {
-        gameScore = 0
-        
-        for var firstDeck = 1; firstDeck <= PlayingCardDeck(); firstDeck += 2
-        {
-            
-        }
-        
-        
-        
-    }
     
     
     

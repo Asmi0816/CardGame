@@ -1,82 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="owA-or-7aw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vKT-PM-Jgp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="vl7-5A-ETE">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CardGameController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vKT-PM-Jgp" customClass="CardGameController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="O3g-6x-0UT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YVa-L4-aja"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="z3e-qO-U3J">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x82-ou-U7c">
-                                <rect key="frame" x="208" y="93" width="184" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your game..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0V-lp-jO0">
+                                <rect key="frame" x="111" y="13" width="378" height="170"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9by-yj-x95">
-                                <rect key="frame" x="200" y="173" width="250" height="332"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <state key="normal" title="flip" backgroundImage="Monstar">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6R-KD-91H">
+                                <rect key="frame" x="175" y="146" width="250" height="153"/>
+                                <color key="backgroundColor" red="0.51108743690000003" green="0.25090164850000002" blue="0.1875078228" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Card matching">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQt-HT-jPF"/>
+                                    <action selector="buttonClick:" destination="vKT-PM-Jgp" eventType="touchUpInside" id="BKZ-4V-T9g"/>
+                                    <segue destination="6vC-jR-4Ch" kind="show" identifier="toMatchingFromMain" id="9W3-GG-elT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9by-yj-x95" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5l9-1R-FTK"/>
-                            <constraint firstItem="x82-ou-U7c" firstAttribute="leading" secondItem="9by-yj-x95" secondAttribute="leading" id="6PT-IV-9pK"/>
-                            <constraint firstItem="x82-ou-U7c" firstAttribute="width" secondItem="9by-yj-x95" secondAttribute="width" constant="30" id="Iyy-pn-ZTo"/>
-                            <constraint firstItem="9by-yj-x95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZT-jn-Mvb"/>
-                            <constraint firstItem="9by-yj-x95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chf-ay-xgw"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardButton" destination="9by-yj-x95" id="gyv-Tk-aml"/>
-                        <outlet property="cardLabel" destination="x82-ou-U7c" id="6xM-3D-Ab4"/>
+                        <outlet property="cardButton" destination="J6R-KD-91H" id="oAs-YT-hal"/>
+                        <outlet property="gameLabel" destination="d0V-lp-jO0" id="j8Q-Lg-OJK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pup-V7-zQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="406"/>
+            <point key="canvasLocation" x="1115" y="95"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="BWQ-3N-QL2">
+        <!--Matching Game-->
+        <scene sceneID="zdH-FO-yUH">
             <objects>
-                <viewController id="owA-or-7aw" sceneMemberID="viewController">
+                <viewController id="6vC-jR-4Ch" customClass="MatchingGame" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JPh-Lg-BCw"/>
-                        <viewControllerLayoutGuide type="bottom" id="RhH-b7-ecV"/>
+                        <viewControllerLayoutGuide type="top" id="bh7-LR-TVv"/>
+                        <viewControllerLayoutGuide type="bottom" id="68B-uq-WKi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zGW-RB-rgX">
+                    <view key="view" contentMode="scaleToFill" id="MCa-Ar-QNu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Choose your game..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hv-lz-2Le">
-                                <rect key="frame" x="49" y="28" width="502" height="145"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                <color key="textColor" red="1" green="0.17017973080000001" blue="0.1092272584" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnt-Fk-RTH">
+                                <rect key="frame" x="20" y="39" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-eW-cf3">
+                                <rect key="frame" x="162" y="39" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16E-qA-EvM">
+                                <rect key="frame" x="20" y="230" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-dc-n3J">
+                                <rect key="frame" x="162" y="230" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJv-w0-x9a">
+                                <rect key="frame" x="306" y="230" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-zC-O1y">
+                                <rect key="frame" x="451" y="39" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyA-gF-8bL">
+                                <rect key="frame" x="306" y="39" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNl-fv-Ns8">
+                                <rect key="frame" x="451" y="230" width="129" height="183"/>
+                                <state key="normal" backgroundImage="Monstar"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.51108743690000003" green="0.25090164850000002" blue="0.1875078228" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayp-bR-DYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13s-hs-vZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="406"/>
+            <point key="canvasLocation" x="1853" y="95"/>
         </scene>
     </scenes>
     <resources>
