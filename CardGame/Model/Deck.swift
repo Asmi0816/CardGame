@@ -32,7 +32,7 @@ class Deck
                     tempDeck.append(removedCard)
             }
         
-        //Replaces tdeck with temp deck
+        //Replaces deck with temp deck
        self.cards = tempDeck
     }
     

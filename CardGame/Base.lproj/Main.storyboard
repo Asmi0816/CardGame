@@ -32,7 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonClick:" destination="vKT-PM-Jgp" eventType="touchUpInside" id="BKZ-4V-T9g"/>
-                                    <segue destination="6vC-jR-4Ch" kind="show" identifier="toMatchingFromMain" id="9W3-GG-elT"/>
+                                    <segue destination="6vC-jR-4Ch" kind="show" identifier="toMatchingGameFromMain" id="9W3-GG-elT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="1115" y="95"/>
         </scene>
-        <!--Matching Game-->
+        <!--Matching Game Controller-->
         <scene sceneID="zdH-FO-yUH">
             <objects>
-                <viewController id="6vC-jR-4Ch" customClass="MatchingGame" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6vC-jR-4Ch" customClass="MatchingGameController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bh7-LR-TVv"/>
                         <viewControllerLayoutGuide type="bottom" id="68B-uq-WKi"/>
@@ -58,40 +58,6 @@
                     <view key="view" contentMode="scaleToFill" id="MCa-Ar-QNu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnt-Fk-RTH">
-                                <rect key="frame" x="20" y="39" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-eW-cf3">
-                                <rect key="frame" x="162" y="39" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16E-qA-EvM">
-                                <rect key="frame" x="20" y="230" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-dc-n3J">
-                                <rect key="frame" x="162" y="230" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJv-w0-x9a">
-                                <rect key="frame" x="306" y="230" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-zC-O1y">
-                                <rect key="frame" x="451" y="39" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyA-gF-8bL">
-                                <rect key="frame" x="306" y="39" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNl-fv-Ns8">
-                                <rect key="frame" x="451" y="230" width="129" height="183"/>
-                                <state key="normal" backgroundImage="Monstar"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.51108743690000003" green="0.25090164850000002" blue="0.1875078228" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
@@ -100,7 +66,4 @@
             <point key="canvasLocation" x="1853" y="95"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Monstar" width="306" height="396"/>
-    </resources>
 </document>

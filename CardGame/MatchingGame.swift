@@ -8,8 +8,7 @@
 
 import Foundation
 
-class MatchingGame
-{
+class MatchingGame {
     
     internal var gameDeck : PlayingCardDeck
     internal var tempDeck : PlayingCardDeck
@@ -26,8 +25,7 @@ class MatchingGame
         cardFaceUp = false
         
     }
-    
-    
+
     
     
     

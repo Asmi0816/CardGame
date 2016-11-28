@@ -29,6 +29,18 @@ import UIKit
         topLabel = UILabel()
         super.init(frame: CGRect(x:0,y:0,width:400,height:800))
     }
+    
+    override init(frame: CGRect)
+    {
+        frontImage = UIImageView()
+        backImage = UIImageView()
+        isFaceUp = Bool()
+        cornerCurve = CGFloat()
+        bottomLabel = UILabel()
+        topLabel = UILabel()
+        super.init(frame: frame);
+        
+    }
 
     required init?(coder acoder:NSCoder)
     {
