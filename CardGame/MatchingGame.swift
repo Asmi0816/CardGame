@@ -30,25 +30,27 @@ class MatchingGame {
     {
         gameDeck.shuffleDeck()
         layOutDeck()
-        drawCards()
+        
     }
     
     private func layOutDeck() -> Void
     {
         gameScore = 0
-        for var cardPlace = 0; cardPlace > 4; cardPlace += 1
+        for var cardPlace = 0; cardPlace < 4; cardPlace += 1
         {
              playerHand.append((gameDeck.drawCard() as? PlayingCard)!)
         }
         
-       
-        
-        
     }
     
-    private func drawCards() -> Void
+    private func switchCard() -> Void
     {
     
+    }
+    
+    func checkMatch() -> Void
+    {
+        
     }
     
     func playGame() -> Void

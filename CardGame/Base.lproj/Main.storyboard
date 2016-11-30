@@ -71,13 +71,50 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="php-DH-cbS">
                                 <rect key="frame" x="218" y="123" width="164" height="224"/>
+                                <color key="backgroundColor" red="0.65729561237373735" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="swichButton:" destination="6vC-jR-4Ch" eventType="touchUpInside" id="Wl6-ak-gWV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-oT-QoO">
+                                <rect key="frame" x="20" y="463" width="125" height="137"/>
+                                <color key="backgroundColor" red="0.00071022727269999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-53-yUo">
+                                <rect key="frame" x="167" y="463" width="125" height="137"/>
+                                <color key="backgroundColor" red="0.00071022727269999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keW-11-B0m">
+                                <rect key="frame" x="455" y="463" width="125" height="137"/>
+                                <color key="backgroundColor" red="0.00071022727269999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETU-NM-FbH">
+                                <rect key="frame" x="310" y="463" width="125" height="137"/>
+                                <color key="backgroundColor" red="0.00071022727272729291" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51108743690000003" green="0.25090164850000002" blue="0.1875078228" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cardButton" destination="bTZ-dQ-Msm" id="qMv-Nt-4eZ"/>
+                        <outlet property="cardFour" destination="keW-11-B0m" id="J21-Rm-nvr"/>
+                        <outlet property="cardOne" destination="Xxe-oT-QoO" id="ZAO-IR-A9y"/>
+                        <outlet property="cardThree" destination="ETU-NM-FbH" id="NGJ-jG-FLe"/>
+                        <outlet property="cardTwo" destination="4PZ-53-yUo" id="vJa-KP-keN"/>
+                        <outlet property="switchMatch" destination="php-DH-cbS" id="OlY-eC-nd0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13s-hs-vZw" userLabel="First Responder" sceneMemberID="firstResponder"/>

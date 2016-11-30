@@ -11,9 +11,16 @@ import UIKit
 class MatchingGameController : UIViewController
 {
     private lazy var clickCount = Int()
+    private lazy var selection = Int()
     private lazy var cardDeck = PlayingCardDeck()
+    private lazy var myGame = MatchingGame()
     
     @IBOutlet weak var cardButton: UIButton!
+    @IBOutlet weak var switchMatch: UIButton!
+    @IBOutlet weak var cardOne: UIButton!
+    @IBOutlet weak var cardTwo: UIButton!
+    @IBOutlet weak var cardThree: UIButton!
+    @IBOutlet weak var cardFour: UIButton!
     
     override func viewDidLoad() -> Void
     {
@@ -26,7 +33,8 @@ class MatchingGameController : UIViewController
         clickCount += 1
         if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            switchMatch.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            cardOne.setTitle("\(myGame.playerHand[0].getCardData())", forState: UIControlState.Normal)
         }
         else
         {
@@ -35,6 +43,18 @@ class MatchingGameController : UIViewController
         
     }
     
+    @IBAction func switchButton(sender: UIButton)
+    {
+       selection = 0
+        if selection == 0
+        {
+            selection = 1
+        }
+        else if selection == 1
+        {
+            selection = 0
+        }
+    }
 
 
 }
