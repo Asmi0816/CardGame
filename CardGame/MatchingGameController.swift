@@ -12,7 +12,6 @@ class MatchingGameController : UIViewController
 {
     private lazy var clickCount = Int()
     private lazy var selection = Int()
-    private lazy var cardDeck = PlayingCardDeck()
     private lazy var myGame = MatchingGame()
     
     @IBOutlet weak var cardButton: UIButton!
@@ -32,7 +31,7 @@ class MatchingGameController : UIViewController
     @IBAction func checkDeck(sender: UIButton)
     {
         clickCount += 1
-        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
+        if let currentCard = myGame.gameDeck.drawRandomCard() as? PlayingCard
         {
             switchMatch.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
             cardOne.setTitle("\(myGame.playerHand[0].getCardData())", forState: UIControlState.Normal)
