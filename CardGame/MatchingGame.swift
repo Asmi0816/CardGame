@@ -11,7 +11,7 @@ import Foundation
 class MatchingGame {
     
     internal var gameDeck : PlayingCardDeck
-    internal var tempDeck : PlayingCardDeck
+    internal var playerHand : [PlayingCard]
     internal var gameScore : Int
     internal var cardFaceUp : Bool
     
@@ -20,12 +20,41 @@ class MatchingGame {
     init()
     {
         gameDeck = PlayingCardDeck()
-        tempDeck = PlayingCardDeck()
-        gameScore = 0
+        playerHand = [PlayingCard]()
+        gameScore = Int(0)
         cardFaceUp = false
         
     }
 
+    func startGame() -> Void
+    {
+        gameDeck.shuffleDeck()
+        layOutDeck()
+        drawCards()
+    }
+    
+    private func layOutDeck() -> Void
+    {
+        gameScore = 0
+        for var cardPlace = 0; cardPlace > 4; cardPlace += 1
+        {
+             playerHand.append((gameDeck.drawCard() as? PlayingCard)!)
+        }
+        
+       
+        
+        
+    }
+    
+    private func drawCards() -> Void
+    {
+    
+    }
+    
+    func playGame() -> Void
+    {
+        
+    }
     
     
     
