@@ -26,6 +26,7 @@ class MatchingGameController : UIViewController
     {
         let tempCard = Card()
         print(tempCard.toString)
+        myGame.startGame()
     }
 
     @IBAction func checkDeck(sender: UIButton)
@@ -35,6 +36,9 @@ class MatchingGameController : UIViewController
         {
             switchMatch.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
             cardOne.setTitle("\(myGame.playerHand[0].getCardData())", forState: UIControlState.Normal)
+            cardTwo.setTitle("\(myGame.playerHand[1].getCardData())", forState: UIControlState.Normal)
+            cardThree.setTitle("\(myGame.playerHand[2].getCardData())", forState: UIControlState.Normal)
+            cardFour.setTitle("\(myGame.playerHand[3].getCardData())", forState: UIControlState.Normal)
         }
         else
         {

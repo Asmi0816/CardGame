@@ -39,6 +39,7 @@ class MatchingGame {
         for var cardPlace = 0; cardPlace < 4; cardPlace += 1
         {
              playerHand.append((gameDeck.drawCard() as? PlayingCard)!)
+            
         }
         
     }
