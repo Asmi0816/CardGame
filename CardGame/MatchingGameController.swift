@@ -11,7 +11,8 @@ import UIKit
 class MatchingGameController : UIViewController
 {
     private lazy var clickCount = Int()
-    private lazy var selection = Int()
+    private lazy var selection = Bool()
+    private lazy var secondarySelection = Bool()
     private lazy var myGame = MatchingGame()
     
     @IBOutlet weak var cardButton: UIButton!
@@ -25,11 +26,14 @@ class MatchingGameController : UIViewController
     {
         let tempCard = Card()
         print(tempCard.toString)
+        selection = false
+        secondarySelection = false
         myGame.startGame()
     }
 
     @IBAction func checkDeck(sender: UIButton)
     {
+        selection = false
         clickCount += 1
         if let currentCard = myGame.gameDeck.drawRandomCard() as? PlayingCard
         {
@@ -48,16 +52,27 @@ class MatchingGameController : UIViewController
     
     @IBAction func switchButton(sender: UIButton)
     {
-       selection = 0
-        if selection == 0
+       
+        selection = !selection
+        
+        if selection == true && secondarySelection == true
         {
-            selection = 1
-        }
-        else if selection == 1
-        {
-            selection = 0
+            
         }
     }
 
+    @IBAction func cardOne(sender: UIButton)
+    {
+        
+        if secondarySelection == false
+        {
+        secondarySelection = true
+        }
+        else if secondarySelection == true
+        {
+            secondarySelection = false
+        }
+
+    }
 
 }

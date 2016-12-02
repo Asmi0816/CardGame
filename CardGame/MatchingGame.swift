@@ -8,7 +8,8 @@
 
 import Foundation
 
-class MatchingGame {
+class MatchingGame
+{
     
     internal var gameDeck : PlayingCardDeck
     internal var playerHand : [PlayingCard]
@@ -44,7 +45,7 @@ class MatchingGame {
         
     }
     
-    private func switchCard() -> Void
+    func swithCard() -> Void
     {
     
     }
@@ -57,7 +58,7 @@ class MatchingGame {
     func playGame() -> Void
     {
         
-    }
+}
     
     
     

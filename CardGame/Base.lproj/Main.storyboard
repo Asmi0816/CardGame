@@ -74,7 +74,7 @@
                                 <color key="backgroundColor" red="0.65729561237373735" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="swichButton:" destination="6vC-jR-4Ch" eventType="touchUpInside" id="Wl6-ak-gWV"/>
+                                    <action selector="switchButton:" destination="6vC-jR-4Ch" eventType="touchUpInside" id="5jK-nP-pKW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-oT-QoO">
@@ -83,6 +83,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cardOne:" destination="6vC-jR-4Ch" eventType="touchUpInside" id="gUJ-hE-Yb1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-53-yUo">
                                 <rect key="frame" x="167" y="463" width="125" height="137"/>
