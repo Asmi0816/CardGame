@@ -10,10 +10,10 @@ import UIKit
 
 class MatchingGameController : UIViewController
 {
-    private lazy var clickCount = Int()
-    private lazy var selection = Bool()
-    private lazy var secondarySelection = Bool()
-    private lazy var myGame = MatchingGame()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var selection = Bool()
+    fileprivate lazy var secondarySelection = Bool()
+    fileprivate lazy var myGame = MatchingGame()
     
     @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var switchMatch: UIButton!
@@ -31,37 +31,38 @@ class MatchingGameController : UIViewController
         myGame.startGame()
     }
 
-    @IBAction func checkDeck(sender: UIButton)
+    @IBAction func checkDeck(_ sender: UIButton)
     {
         selection = false
         clickCount += 1
         if let currentCard = myGame.gameDeck.drawRandomCard() as? PlayingCard
         {
-            switchMatch.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
-            cardOne.setTitle("\(myGame.playerHand[0].getCardData())", forState: UIControlState.Normal)
-            cardTwo.setTitle("\(myGame.playerHand[1].getCardData())", forState: UIControlState.Normal)
-            cardThree.setTitle("\(myGame.playerHand[2].getCardData())", forState: UIControlState.Normal)
-            cardFour.setTitle("\(myGame.playerHand[3].getCardData())", forState: UIControlState.Normal)
+            switchMatch.setTitle("\(currentCard.getCardData())", for: UIControlState())
+            cardOne.setTitle("\(myGame.playerHand[0].getCardData())", for: UIControlState())
+            cardTwo.setTitle("\(myGame.playerHand[1].getCardData())", for: UIControlState())
+            cardThree.setTitle("\(myGame.playerHand[2].getCardData())", for: UIControlState())
+            cardFour.setTitle("\(myGame.playerHand[3].getCardData())", for: UIControlState())
         }
         else
         {
-            cardButton.setTitle("Reshuffle deck", forState: UIControlState.Normal)
+            cardButton.setTitle("Reshuffle deck", for: UIControlState())
         }
         
     }
     
-    @IBAction func switchButton(sender: UIButton)
+    @IBAction func switchButton(_ sender: UIButton)
     {
        
         selection = !selection
+       
         
         if selection == true && secondarySelection == true
         {
-            
+           myGame.switchCard()
         }
     }
 
-    @IBAction func cardOne(sender: UIButton)
+    @IBAction func cardOne(_ sender: UIButton)
     {
         
         if secondarySelection == false

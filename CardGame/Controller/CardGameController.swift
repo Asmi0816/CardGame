@@ -26,9 +26,9 @@ class CardGameController : UIViewController
     
     
     
-    @IBAction func buttonClick(sender: UIButton)
+    @IBAction func buttonClick(_ sender: UIButton)
     {
-        performSegueWithIdentifier("toMatchingGameFromMain", sender: sender)
+        performSegue(withIdentifier: "toMatchingGameFromMain", sender: sender)
     }
     
 }
