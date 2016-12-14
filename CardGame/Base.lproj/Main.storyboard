@@ -120,6 +120,13 @@
                                     <action selector="cardOne:" destination="6vC-jR-4Ch" eventType="touchUpInside" id="gUJ-hE-Yb1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joey has 0 pairs and he's a kangaroo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2A-1l-qBC">
+                                <rect key="frame" x="218" y="28" width="164" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.51108743690000003" green="0.25090164850000002" blue="0.1875078228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

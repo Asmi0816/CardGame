@@ -15,6 +15,7 @@ class MatchingGameController : UIViewController
     fileprivate lazy var secondarySelection = Bool()
     fileprivate lazy var myGame = MatchingGame()
     
+    
     @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var switchMatch: UIButton!
     @IBOutlet weak var cardOne: UIButton!
@@ -35,8 +36,13 @@ class MatchingGameController : UIViewController
     {
         selection = false
         clickCount += 1
-        if let currentCard = myGame.gameDeck.drawRandomCard() as? PlayingCard
+        
+        if let currentCard = myGame.setCard() as? PlayingCard
         {
+
+            secondarySelection = false
+            cardOne.backgroundColor = UIColor.black
+            
             switchMatch.setTitle("\(currentCard.getCardData())", for: UIControlState())
             cardOne.setTitle("\(myGame.playerHand[0].getCardData())", for: UIControlState())
             cardTwo.setTitle("\(myGame.playerHand[1].getCardData())", for: UIControlState())
@@ -47,6 +53,7 @@ class MatchingGameController : UIViewController
         {
             cardButton.setTitle("Reshuffle deck", for: UIControlState())
         }
+        
         
     }
     
@@ -59,7 +66,10 @@ class MatchingGameController : UIViewController
         if selection == true && secondarySelection == true
         {
            myGame.switchCard()
+           cardOne.setNeedsDisplay()
+        switchMatch.setNeedsDisplay()
         }
+        
     }
 
     @IBAction func cardOne(_ sender: UIButton)
@@ -68,10 +78,12 @@ class MatchingGameController : UIViewController
         if secondarySelection == false
         {
         secondarySelection = true
+        cardOne.backgroundColor = UIColor.white
         }
         else if secondarySelection == true
         {
-            secondarySelection = false
+        secondarySelection = false
+        cardOne.backgroundColor = UIColor.black
         }
 
     }
